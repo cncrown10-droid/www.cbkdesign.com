@@ -2,7 +2,7 @@
   display:inline-block;
   margin-top:14px;
   padding:10px 14px;
-  background:#0ea5a4;
+  background:#0b3d91;
   color:#fff;
   border-radius:10px;
   font-weight:600;
@@ -11,5 +11,5 @@
 }
 
 .offer-btn:hover {
-  background:#0c8e8d;
+  background:#092f74;
 }
