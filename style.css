@@ -13,3 +13,14 @@
 .offer-btn:hover {
   background:#092f74;
 }
+
+@media (max-width: 600px) {
+  form a.whatsapp-btn, 
+  form button {
+    width: 100% !important;
+  }
+
+  form {
+    grid-template-columns: 1fr !important;
+  }
+}
