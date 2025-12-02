@@ -3,80 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CBK Design — Offres</title>
+  <title>CBK Design — Toutes les offres</title>
   <style>
-    body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; padding:0; color:#0b1220; background:#f9f9f9;}
-    header, footer { background:#fff; padding:16px 20px; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
-    header a { margin-right:16px; text-decoration:none; color:#0b1220; font-weight:600; }
-    h1,h2 { margin:0 0 12px; }
-    .container { max-width:1100px; margin:0 auto; padding:20px; }
-    .offer-card { background:#fff; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
-    .offer-card h3 { margin-top:0; }
-    .offer-card p { margin:8px 0; }
-    .price { font-weight:700; color:#0b1220; margin-top:8px; }
-    .btn { display:inline-block; padding:10px 16px; border-radius:8px; background:#1e40af; color:#fff; font-weight:600; text-decoration:none; margin-top:10px; }
-    .btn:hover { background:#1e3a8a; }
+    *,*::before,*::after{box-sizing:border-box;}
+    body{margin:0;font-family:Inter, sans-serif;color:#0b1220;background:#f9f9f9;}
+    a{text-decoration:none;color:inherit;}
+    .container{max-width:1100px;margin:0 auto;padding:20px;}
+    h1,h2,h3{margin:0 0 10px;}
+    h1{font-size:2rem;margin-bottom:20px;}
+    .card{background:#fff;padding:20px;margin-bottom:20px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.05);}
+    .badge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:0.85rem;background:#eef2ff;color:#4c1d95;margin-bottom:8px;}
+    .offer-btn{display:inline-block;padding:10px 16px;border-radius:8px;background:#1e40af;color:#fff;font-weight:600;margin-top:12px;}
+    .offer-btn:hover{background:#1e3a8a;}
+    .price{font-weight:700;margin-top:8px;color:#1e40af;}
+    header{background:#0ea5a4;color:#fff;padding:12px 20px;border-radius:8px;margin-bottom:20px;}
+    header a{color:#fff;margin-left:12px;font-weight:500;}
+    nav{margin-bottom:20px;}
   </style>
 </head>
 <body>
+
   <header>
-    <a href="../index.html">Accueil</a>
-    <a href="../index.html#services">Services</a>
-    <a href="../index.html#contact">Contact</a>
+    <div class="container">
+      <strong>CBK Design</strong>
+      <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="index.html">Offres</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
-    <h1>Nos Offres</h1>
-    <p>Découvre les détails et les prix de chaque type de site web que nous proposons. Clique sur "Commander" pour nous contacter et démarrer ton projet.</p>
+  <main class="container">
+    <h1>Toutes nos offres</h1>
 
-    <div class="offer-card">
+    <div class="card">
+      <div class="badge">Portfolio</div>
       <h3>Portfolio créatif</h3>
       <p>Site épuré pour présenter tes projets, galeries d'images, pages de contact et téléchargements. Idéal pour photographes, designers, artistes.</p>
       <p class="price">Prix indicatif : 100 $</p>
-      <a href="../index.html#contact" class="btn">Commander</a>
+      <a href="portfolio.html" class="offer-btn">Commander</a>
     </div>
 
-    <div class="offer-card">
+    <div class="card">
+      <div class="badge">Vitrine</div>
       <h3>Site vitrine</h3>
       <p>Présente ton entreprise, tes services, tarifs et avis clients. Pages simples, navigation claire et formulaire de contact fonctionnel.</p>
       <p class="price">Prix indicatif : 150 $</p>
-      <a href="../index.html#contact" class="btn">Commander</a>
+      <a href="vitrine.html" class="offer-btn">Commander</a>
     </div>
 
-    <div class="offer-card">
+    <div class="card">
+      <div class="badge">E‑commerce</div>
       <h3>Boutique en ligne</h3>
       <p>Catalogue produits, panier, paiement (Stripe/PayPal), gestion de commandes et pages produits optimisées pour la conversion.</p>
-      <p class="price">Prix indicatif : 250 $</p>
-      <a href="../index.html#contact" class="btn">Commander</a>
+      <p class="price">Prix indicatif : 300 $</p>
+      <a href="ecommerce.html" class="offer-btn">Commander</a>
     </div>
 
-    <div class="offer-card">
+    <div class="card">
+      <div class="badge">Landing</div>
       <h3>Landing Page / Page de vente</h3>
       <p>Page unique optimisée pour convertir (inscriptions, promotions, campagnes). Chargement rapide et design axé CTA.</p>
       <p class="price">Prix indicatif : 120 $</p>
-      <a href="../index.html#contact" class="btn">Commander</a>
+      <a href="landing.html" class="offer-btn">Commander</a>
     </div>
 
-    <div class="offer-card">
+    <div class="card">
+      <div class="badge">Blog</div>
       <h3>Blog / Site éditorial</h3>
       <p>Plateforme simple pour publier des articles, gérer catégories et auteurs. Optimisé SEO et lecture mobile.</p>
       <p class="price">Prix indicatif : 130 $</p>
-      <a href="../index.html#contact" class="btn">Commander</a>
+      <a href="blog.html" class="offer-btn">Commander</a>
     </div>
 
-    <div class="offer-card">
+    <div class="card">
+      <div class="badge">Web App</div>
       <h3>Application web légère</h3>
       <p>Outils métiers simples (prise de rendez-vous, gestion clients, formulaires avancés). Déploiement sur serveur ou cloud.</p>
-      <p class="price">Prix indicatif : 300 $</p>
-      <a href="../index.html#contact" class="btn">Commander</a>
+      <p class="price">Prix indicatif : 400 $</p>
+      <a href="webapp.html" class="offer-btn">Commander</a>
     </div>
 
-  </div>
+  </main>
 
-  <footer>
-    <div class="container">
-      © CBK Design — Tous droits réservés
-    </div>
-  </footer>
 </body>
 </html>
