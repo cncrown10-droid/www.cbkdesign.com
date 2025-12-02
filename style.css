@@ -14,6 +14,17 @@
   background:#092f74;
 }
 
+.contact-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contact-info p {
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+
 .footer {
     text-align: center;
     padding: 20px;
