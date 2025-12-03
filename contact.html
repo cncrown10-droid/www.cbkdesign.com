@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact & Devis — CBK Design</title>
+
+  <style>
+    :root{
+      --brand:#0ea5a4; --dark:#0b1220; --muted:#6b7280; --card:#fff; --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;color:var(--dark);background:#f7faf9;line-height:1.5}
+    .wrap{max-width:980px;margin:28px auto;padding:20px}
+    h1{margin:18px 0 6px;font-size:clamp(24px,4vw,32px)}
+    p.lead{color:var(--muted)}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+    input,textarea{padding:12px;border-radius:var(--radius);border:1px solid rgba(11,18,32,0.06);width:100%}
+    textarea{grid-column:1 / -1}
+    button{padding:12px 16px;border:none;border-radius:10px;background:var(--brand);color:#fff;font-weight:600;width:160px;cursor:pointer}
+    .contact-info, .about-us{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 8px 24px rgba(12,18,30,0.06);margin-top:20px}
+    .contact-info ul, .about-us ul{padding-left:18px;color:var(--muted)}
+    a.btn-light{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;text-decoration:none;background:#f1f5f9;color:var(--dark);font-weight:700}
+    @media(max-width:640px){form{grid-template-columns:1fr}}
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="font-weight:800">CBK Design — Contact</div>
+      <div><a href="index.html" class="btn-light"><i class="fa-solid fa-arrow-left"></i> Retour au site</a></div>
+    </div>
+
+    <h1>Contact & Devis</h1>
+    <p class="lead">Remplis ce formulaire ou utilise nos coordonnées pour nous contacter directement.</p>
+
+    <form>
+      <input type="text" name="name" placeholder="Nom" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="project" placeholder="Type de projet (ex: portfolio, boutique)" style="grid-column:1 / -1" />
+      <textarea name="message" placeholder="Détails / fonctionnalités souhaitées" rows="4"></textarea>
+      <button type="submit"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
+    </form>
+
+    <div class="contact-info">
+      <h2>Contactez-nous</h2>
+      <ul>
+        <li><i class="fa-solid fa-phone"></i> Téléphone: +243 979 554 447</li>
+        <li><i class="fa-solid fa-fax"></i> Fax: +243 979 554 448</li>
+        <li><i class="fa-solid fa-envelope"></i> Email: contact@cbkdesign.com</li>
+      </ul>
+    </div>
+
+    <div class="about-us">
+      <h2>À propos de nous</h2>
+      <p>CBK Design conçoit des sites web modernes et performants, optimise les projets pour mobile et SEO, et propose des solutions complètes d’impression et de branding. Nous accompagnons nos clients de A à Z pour assurer une présence digitale efficace et un design professionnel.</p>
+    </div>
+  </div>
+
+  <script>
+    // Simple form simulation
+    document.querySelector('form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Merci, votre message a été envoyé ! Nous vous contacterons bientôt.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
